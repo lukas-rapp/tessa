@@ -1,9 +1,14 @@
-//___FILEHEADER___
+//
+//  TessaApp.swift
+//  Tessa
+//
+//  Created by Lukas Rapp on 20.03.24.
+//
 
 import SwiftUI
 
 @main
-struct ___PACKAGENAME:identifier___App: App {
+struct TessaApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

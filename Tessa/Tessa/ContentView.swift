@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Tessa - Teaching Assistant
+//  Tessa
 //
 //  Created by Lukas Rapp on 20.03.24.
 //
