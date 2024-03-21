@@ -11,6 +11,14 @@
 		D532C92E2BABA1C30038EA94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C92D2BABA1C30038EA94 /* ContentView.swift */; };
 		D532C9302BABA1C40038EA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D532C92F2BABA1C40038EA94 /* Assets.xcassets */; };
 		D532C9332BABA1C40038EA94 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D532C9322BABA1C40038EA94 /* Preview Assets.xcassets */; };
+		D532C93C2BABA49B0038EA94 /* ClassPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C93B2BABA49B0038EA94 /* ClassPicker.swift */; };
+		D532C9402BABAD8C0038EA94 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C93F2BABAD8C0038EA94 /* OverviewView.swift */; };
+		D532C9452BABAE5C0038EA94 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9442BABAE5C0038EA94 /* AppView.swift */; };
+		D532C94A2BABAECA0038EA94 /* StudentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9492BABAECA0038EA94 /* StudentsView.swift */; };
+		D532C94D2BABAEF80038EA94 /* StudentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C94C2BABAEF80038EA94 /* StudentDetailView.swift */; };
+		D532C94F2BABAF1F0038EA94 /* TestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C94E2BABAF1F0038EA94 /* TestsView.swift */; };
+		D532C9522BABB4FA0038EA94 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9512BABB4FA0038EA94 /* StatsView.swift */; };
+		D532C9562BABB59C0038EA94 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9552BABB59C0038EA94 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		D532C92D2BABA1C30038EA94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D532C92F2BABA1C40038EA94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D532C9322BABA1C40038EA94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D532C93B2BABA49B0038EA94 /* ClassPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassPicker.swift; sourceTree = "<group>"; };
+		D532C93F2BABAD8C0038EA94 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		D532C9442BABAE5C0038EA94 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		D532C9492BABAECA0038EA94 /* StudentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsView.swift; sourceTree = "<group>"; };
+		D532C94C2BABAEF80038EA94 /* StudentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailView.swift; sourceTree = "<group>"; };
+		D532C94E2BABAF1F0038EA94 /* TestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsView.swift; sourceTree = "<group>"; };
+		D532C9512BABB4FA0038EA94 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		D532C9552BABB59C0038EA94 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				D532C92B2BABA1C30038EA94 /* TessaApp.swift */,
+				D532C9442BABAE5C0038EA94 /* AppView.swift */,
 				D532C92D2BABA1C30038EA94 /* ContentView.swift */,
+				D532C9422BABAD9F0038EA94 /* ClassPicker Subsystem */,
+				D532C9412BABAD920038EA94 /* Overview Subsystem */,
+				D532C94B2BABAECE0038EA94 /* Student Subsystem */,
+				D532C9502BABAF220038EA94 /* Test Subsystem */,
+				D532C9532BABB4FD0038EA94 /* Statistics Subsystem */,
+				D532C9542BABB58E0038EA94 /* Models */,
 				D532C92F2BABA1C40038EA94 /* Assets.xcassets */,
 				D532C9312BABA1C40038EA94 /* Preview Content */,
 			);
@@ -65,6 +88,55 @@
 				D532C9322BABA1C40038EA94 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D532C9412BABAD920038EA94 /* Overview Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				D532C93F2BABAD8C0038EA94 /* OverviewView.swift */,
+			);
+			path = "Overview Subsystem";
+			sourceTree = "<group>";
+		};
+		D532C9422BABAD9F0038EA94 /* ClassPicker Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				D532C93B2BABA49B0038EA94 /* ClassPicker.swift */,
+			);
+			path = "ClassPicker Subsystem";
+			sourceTree = "<group>";
+		};
+		D532C94B2BABAECE0038EA94 /* Student Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				D532C9492BABAECA0038EA94 /* StudentsView.swift */,
+				D532C94C2BABAEF80038EA94 /* StudentDetailView.swift */,
+			);
+			path = "Student Subsystem";
+			sourceTree = "<group>";
+		};
+		D532C9502BABAF220038EA94 /* Test Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				D532C94E2BABAF1F0038EA94 /* TestsView.swift */,
+			);
+			path = "Test Subsystem";
+			sourceTree = "<group>";
+		};
+		D532C9532BABB4FD0038EA94 /* Statistics Subsystem */ = {
+			isa = PBXGroup;
+			children = (
+				D532C9512BABB4FA0038EA94 /* StatsView.swift */,
+			);
+			path = "Statistics Subsystem";
+			sourceTree = "<group>";
+		};
+		D532C9542BABB58E0038EA94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D532C9552BABB59C0038EA94 /* Student.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D532C94F2BABAF1F0038EA94 /* TestsView.swift in Sources */,
+				D532C94D2BABAEF80038EA94 /* StudentDetailView.swift in Sources */,
+				D532C93C2BABA49B0038EA94 /* ClassPicker.swift in Sources */,
+				D532C9562BABB59C0038EA94 /* Student.swift in Sources */,
 				D532C92E2BABA1C30038EA94 /* ContentView.swift in Sources */,
+				D532C94A2BABAECA0038EA94 /* StudentsView.swift in Sources */,
+				D532C9452BABAE5C0038EA94 /* AppView.swift in Sources */,
 				D532C92C2BABA1C30038EA94 /* TessaApp.swift in Sources */,
+				D532C9402BABAD8C0038EA94 /* OverviewView.swift in Sources */,
+				D532C9522BABB4FA0038EA94 /* StatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +360,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +390,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
