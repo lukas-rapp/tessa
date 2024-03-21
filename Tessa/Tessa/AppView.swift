@@ -13,57 +13,71 @@ struct AppView: View {
     
     var body: some View {
         NavigationSplitView(sidebar: {
-            VStack(alignment: .leading, spacing: CGFloat(30.0)){
-                HStack(spacing: CGFloat(20.0)){
-                    Circle()
-                        .frame(width: 50, height: 50)
-                    VStack(alignment: .leading){
-                        Text("Herr Müller")
-                            .font(.headline)
-                        Text("Lehrer")
-                            .font(.subheadline)
-                            .foregroundStyle(.gray)
-                    }
-                }
-                
+            VStack(alignment: .center){
                 VStack(alignment: .leading, spacing: CGFloat(20.0)){
-                    NavigationLink(destination: {
-                        OverviewView()
-                    }, label: {
-                        Label(
-                            title: { Text("Übersicht") },
-                            icon: { Image(systemName: "studentdesk") }
-                        )
-                    })
+                    HStack(alignment: .center ,spacing: CGFloat(20.0)){
+                        Group{
+                            Image("mueller")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .scaledToFill()
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                                .shadow(radius: 10)
+                        }
+                        .padding(.leading, 30)
+                        VStack(alignment: .leading){
+                            Text("Herr Müller")
+                                .font(.headline)
+                            Text("Lehrer")
+                                .font(.subheadline)
+                                .foregroundStyle(.gray)
+                        }
+                    }
                     
-                    NavigationLink(destination: {
-                        StudentsView()
-                    }, label: {
-                        Label(
-                            title: { Text("Schüler") },
-                            icon: { Image(systemName: "figure.stand") }
-                        )
-                    })
-                    NavigationLink(destination: {
-                        TestsView()
-                    }, label: {
-                        Label(
-                            title: { Text("Tests") },
-                            icon: { Image(systemName: "newspaper") }
-                        )
-                    })
-                    NavigationLink(destination: {
-                        StatsView()
-                    }, label: {
-                        Label(
-                            title: { Text("Statistics") },
-                            icon: { Image(systemName: "chart.xyaxis.line") }
-                        )
-                    })
+                    
+                    VStack(alignment: .leading, spacing: CGFloat(20.0)){
+                        List {
+                            NavigationLink(destination: {
+                                TableTest()
+                            }, label: {
+                                Label(
+                                    title: { Text("Übersicht") },
+                                    icon: { Image(systemName: "studentdesk") }
+                                )
+                            })
+                            
+                            NavigationLink(destination: {
+                                StudentsView()
+                            }, label: {
+                                Label(
+                                    title: { Text("Schüler") },
+                                    icon: { Image(systemName: "figure.stand") }
+                                )
+                            })
+                            NavigationLink(destination: {
+                                TestsView()
+                            }, label: {
+                                Label(
+                                    title: { Text("Tests") },
+                                    icon: { Image(systemName: "newspaper") }
+                                )
+                            })
+                            NavigationLink(destination: {
+                                StatsView()
+                            }, label: {
+                                Label(
+                                    title: { Text("Statistics") },
+                                    icon: { Image(systemName: "chart.xyaxis.line") }
+                                )
+                            })
+                        }
+                        }
                 }
+                Spacer()
             }
         }, detail: {
-            
+            ClassPicker()
         })
     }
 }

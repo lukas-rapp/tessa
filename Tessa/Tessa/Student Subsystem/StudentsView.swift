@@ -10,14 +10,45 @@ import Charts
 
 struct StudentsView: View {
     
-    @State var students = [Student(name: "Horst"), Student(name: "Hans"), Student(name: "Heinrich")]
+    @State var students = ["Horst", "Heinrich", "Harald"]
     
     var body: some View {
         List {
-            ForEach($students, id: \.name) { student in
-                StudentCell(student: student)
+            ForEach(students, id: \.self){ student in
+                NavigationLink(destination: {
+                    StudentDetailView()
+                }, label: {
+                    Section {
+                        VStack{
+                            HStack(spacing: CGFloat(20.0)){
+                                Image("mueller")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .scaledToFill()
+                                    .clipShape(Circle())
+                                    .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                                    .shadow(radius: 10)
+                                VStack(alignment: .leading){
+                                    Text(student)
+                                        .font(.headline)
+                                    Text("Klasse 1a")
+                                        .font(.subheadline)
+                                        .foregroundStyle(.gray)
+                                }
+                                .padding()
+                            }
+                        }
+                    }
+                })
             }
         }
+        
+        /*Text("StudentsView")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+        Text("This is the student page")
+            .font(.subheadline)
+            .foregroundStyle(.gray)*/
     }
 }
 

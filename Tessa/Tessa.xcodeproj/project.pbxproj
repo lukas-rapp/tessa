@@ -19,6 +19,14 @@
 		D532C94F2BABAF1F0038EA94 /* TestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C94E2BABAF1F0038EA94 /* TestsView.swift */; };
 		D532C9522BABB4FA0038EA94 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9512BABB4FA0038EA94 /* StatsView.swift */; };
 		D532C9562BABB59C0038EA94 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9552BABB59C0038EA94 /* Student.swift */; };
+		D532C9582BABBB910038EA94 /* TableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9572BABBB910038EA94 /* TableTest.swift */; };
+		D532C95E2BABDE5F0038EA94 /* Studentclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C95D2BABDE5F0038EA94 /* Studentclass.swift */; };
+		D532C9602BABDEC60038EA94 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C95F2BABDEC60038EA94 /* Teacher.swift */; };
+		D532C9622BABE33C0038EA94 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9612BABE33C0038EA94 /* Exam.swift */; };
+		D532C9642BABE3900038EA94 /* Criteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9632BABE3900038EA94 /* Criteria.swift */; };
+		D532C9662BABE3DC0038EA94 /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9652BABE3DC0038EA94 /* Mark.swift */; };
+		D532C9682BABE4330038EA94 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532C9672BABE4330038EA94 /* ServerConnection.swift */; };
+		D5A9B1E92BAC563C005B5723 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9B1E82BAC563C005B5723 /* Table.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +43,14 @@
 		D532C94E2BABAF1F0038EA94 /* TestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsView.swift; sourceTree = "<group>"; };
 		D532C9512BABB4FA0038EA94 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		D532C9552BABB59C0038EA94 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		D532C9572BABBB910038EA94 /* TableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTest.swift; sourceTree = "<group>"; };
+		D532C95D2BABDE5F0038EA94 /* Studentclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Studentclass.swift; sourceTree = "<group>"; };
+		D532C95F2BABDEC60038EA94 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		D532C9612BABE33C0038EA94 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		D532C9632BABE3900038EA94 /* Criteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Criteria.swift; sourceTree = "<group>"; };
+		D532C9652BABE3DC0038EA94 /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
+		D532C9672BABE4330038EA94 /* ServerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
+		D5A9B1E82BAC563C005B5723 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,7 @@
 				D532C9502BABAF220038EA94 /* Test Subsystem */,
 				D532C9532BABB4FD0038EA94 /* Statistics Subsystem */,
 				D532C9542BABB58E0038EA94 /* Models */,
+				D532C9692BABE8CB0038EA94 /* Networking */,
 				D532C92F2BABA1C40038EA94 /* Assets.xcassets */,
 				D532C9312BABA1C40038EA94 /* Preview Content */,
 			);
@@ -135,8 +152,23 @@
 			isa = PBXGroup;
 			children = (
 				D532C9552BABB59C0038EA94 /* Student.swift */,
+				D532C9652BABE3DC0038EA94 /* Mark.swift */,
+				D532C95D2BABDE5F0038EA94 /* Studentclass.swift */,
+				D532C95F2BABDEC60038EA94 /* Teacher.swift */,
+				D532C9612BABE33C0038EA94 /* Exam.swift */,
+				D532C9632BABE3900038EA94 /* Criteria.swift */,
+				D532C9572BABBB910038EA94 /* TableTest.swift */,
+				D5A9B1E82BAC563C005B5723 /* Table.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D532C9692BABE8CB0038EA94 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D532C9672BABE4330038EA94 /* ServerConnection.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,14 +241,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D532C9662BABE3DC0038EA94 /* Mark.swift in Sources */,
+				D532C9622BABE33C0038EA94 /* Exam.swift in Sources */,
+				D532C95E2BABDE5F0038EA94 /* Studentclass.swift in Sources */,
+				D532C9682BABE4330038EA94 /* ServerConnection.swift in Sources */,
 				D532C94F2BABAF1F0038EA94 /* TestsView.swift in Sources */,
 				D532C94D2BABAEF80038EA94 /* StudentDetailView.swift in Sources */,
 				D532C93C2BABA49B0038EA94 /* ClassPicker.swift in Sources */,
+				D532C9602BABDEC60038EA94 /* Teacher.swift in Sources */,
 				D532C9562BABB59C0038EA94 /* Student.swift in Sources */,
 				D532C92E2BABA1C30038EA94 /* ContentView.swift in Sources */,
+				D532C9582BABBB910038EA94 /* TableTest.swift in Sources */,
 				D532C94A2BABAECA0038EA94 /* StudentsView.swift in Sources */,
 				D532C9452BABAE5C0038EA94 /* AppView.swift in Sources */,
 				D532C92C2BABA1C30038EA94 /* TessaApp.swift in Sources */,
+				D5A9B1E92BAC563C005B5723 /* Table.swift in Sources */,
+				D532C9642BABE3900038EA94 /* Criteria.swift in Sources */,
 				D532C9402BABAD8C0038EA94 /* OverviewView.swift in Sources */,
 				D532C9522BABB4FA0038EA94 /* StatsView.swift in Sources */,
 			);
